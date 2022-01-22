@@ -1,0 +1,28 @@
+@import "common";
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  &Logo {
+    @include row;
+    @include center;
+    width: 20%;
+    height: 100%;
+  }
+  &Routes {
+    margin-right: 3%;
+    margin-left: 3%;
+    @include row;
+    @include end;
+    height: 100%;
+    width: 80%;
+    &Item {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+  }
+}
