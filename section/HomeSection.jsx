@@ -16,30 +16,32 @@ const defaultOptions = {
 export default function HomeSection() {
   return (
     <div className={styles.Home} id="Home">
-      {/* <div className={styles.HomeOne}>
-        <span className={styles.HomeOneInText}>Hey there,I am</span>
-        <span className={styles.HomeOneName}>Siddhesh.</span>
-        <span className={styles.HomeOneSName}> Dabholkar.</span>
-        <Typical
-          className={styles.HomeOneTypical}
-          steps={[
-            "I am Software Engineer",
-            1000,
-            "I am Full stack web and mobile developer",
-            1000,
-            "I am Freelancer",
-            1000,
-            "I am Javascript enthusiasist",
-            1000,
-          ]}
-          loop={Infinity}
-          wrapper="p"
-        />
-        <button className={styles.HomeOneButton}>Resume</button>
+      <div className={styles.HomeOne}>
+        <div className={styles.HomeOneCont}>
+          <span className={styles.HomeOneContInText}>Hey there,I am</span>
+          <span className={styles.HomeOneContName}>Siddhesh.</span>
+          <span className={styles.HomeOneContSName}> Dabholkar.</span>
+          <Typical
+            className={styles.HomeOneContTypical}
+            steps={[
+              // "I am Software Engineer",
+              // 1000,
+              "I am Full stack web and mobile developer",
+              1000,
+              "I am Freelancer",
+              1000,
+              "I am Javascript enthusiasist",
+              1000,
+            ]}
+            loop={Infinity}
+            wrapper="p"
+          />
+          <button className={styles.HomeOneContButton}>Resume</button>
+        </div>
       </div>
       <div className={styles.HomeTwo}>
         <Lottie options={defaultOptions} />
-      </div> */}
+      </div>
     </div>
   );
 }
