@@ -1,0 +1,46 @@
+@import "common";
+@import "responsive";
+@import "Typography";
+
+.Contact {
+  @include sectionContainer;
+  @include col;
+  @include center;
+  width: 100%;
+  &Con {
+    @include col;
+    width: 60%;
+    @include center;
+    height: 90%;
+    &Heading {
+      @include GradientText(#fbff00, #fdff6d);
+      padding-bottom: 2%;
+      font-size: 35px;
+    }
+    &Para {
+      font-size: 30px;
+      line-height: 1.2;
+      color: #6df5ff;
+    }
+    &LogoCont {
+      @include row;
+      @include center;
+      width: 100%;
+      padding: 2%;
+      &Logo {
+        width: 4%;
+        font-size: 30px;
+        color: #fff;
+        margin-left: 2%;
+        margin-right: 2%;
+        cursor: pointer;
+      }
+    }
+    &Button {
+      padding: 10px;
+      width: 30%;
+      font-size: 15px;
+      border-radius: 25px;
+    }
+  }
+}
