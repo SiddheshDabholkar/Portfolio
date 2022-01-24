@@ -30,24 +30,45 @@ const data = [
 ];
 
 export default function TimeLine() {
+  const Right = ({ d }) => {
+    const Icon = d.icon;
+    return (
+      <div className={styles.TimeLineRowCont}>
+        <Icon className={styles.TimeLineRowContIcon} />
+        <span className={styles.TimeLineRowContText}>{d.name}</span>
+      </div>
+    );
+  };
+  const Middle = () => (
+    <div className={styles.TimeLineRowMid}>
+      <div className={styles.Line}></div>
+      <div className={styles.Bubble}></div>
+      <div className={styles.Line}></div>
+    </div>
+  );
+  const Left = ({ d }) => (
+    <div className={styles.TimeLineRowCont}>
+      <Card heading={d.description} date={d.meta} />
+    </div>
+  );
   return (
     <div className={styles.TimeLine}>
       {data.map((d) => {
-        const Icon = d.icon;
         return (
           <div key={d.id} className={styles.TimeLineRow}>
-            <div className={styles.TimeLineRowCont}>
-              <Icon className={styles.TimeLineRowContIcon} />
-              <span className={styles.TimeLineRowContText}>{d.name}</span>
-            </div>
-            <div className={styles.TimeLineRowMid}>
-              <div className={styles.Line}></div>
-              <div className={styles.Bubble}></div>
-              <div className={styles.Line}></div>
-            </div>
-            <div className={styles.TimeLineRowCont}>
-              <Card heading={d.description} date={d.meta} />
-            </div>
+            {d.id % 2 !== 0 ? (
+              <>
+                <Right d={d} />
+                <Middle />
+                <Left d={d} />
+              </>
+            ) : (
+              <>
+                <Left d={d} />
+                <Middle />
+                <Right d={d} />
+              </>
+            )}
           </div>
         );
       })}
