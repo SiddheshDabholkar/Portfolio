@@ -20,7 +20,7 @@ export default function ContactSection() {
       <div className={styles.ContactCon}>
         <h1 className={styles.ContactConH}>Contact</h1>
         <span className={styles.ContactConHeading}>
-          Intrested in Working Together? Get In Touch
+          Intrested in Working Together?
         </span>
         <p className={styles.ContactConPara}>
           Although I am student,I am constantly looking for freelancing and
@@ -36,9 +36,6 @@ export default function ContactSection() {
             </Link>
           ))}
         </div>
-        <button className={styles.ContactConButton}>
-          <a href="mailto:me.iamsiddhesh22@gmail.com">Get in touch</a>
-        </button>
       </div>
     </div>
   );

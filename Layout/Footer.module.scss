@@ -1,0 +1,11 @@
+@import "common";
+
+.Footer {
+  @include col;
+  @include center;
+  width: 100%;
+  &S {
+    padding: 30px;
+    font: 100;
+  }
+}

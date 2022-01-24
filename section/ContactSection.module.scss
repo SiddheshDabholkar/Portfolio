@@ -25,9 +25,13 @@
       font-size: 35px;
     }
     &Para {
+      width: 70%;
       line-height: 1.2;
       text-align: center;
       color: #dddddd;
+      @include tablet {
+        width: 100%;
+      }
     }
     &LogoCont {
       @include row;
@@ -38,21 +42,10 @@
         width: 4%;
         font-size: 30px;
         color: #fff;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
         cursor: pointer;
       }
-    }
-    &Button {
-      text-align: center;
-      margin-top: 2%;
-      padding: 10px;
-      font-size: 15px;
-      border-radius: 25px;
-      min-width: 30%;
-      background-color: #ff00ff;
-      border: none;
-      color: #fff;
     }
   }
 }
