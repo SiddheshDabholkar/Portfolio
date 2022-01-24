@@ -18,6 +18,7 @@ export default function ContactSection() {
   return (
     <div id="Contact" className={styles.Contact}>
       <div className={styles.ContactCon}>
+        <h1 className={styles.ContactConH}>Contact</h1>
         <span className={styles.ContactConHeading}>
           Intrested in Working Together? Get In Touch
         </span>

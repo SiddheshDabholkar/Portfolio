@@ -12,15 +12,22 @@
     width: 60%;
     @include center;
     height: 90%;
+    @include tabletL {
+      width: 90%;
+    }
+    &H {
+      @include SectionHeadText(blue, skyblue);
+    }
     &Heading {
-      @include GradientText(#fbff00, #fdff6d);
+      text-align: center;
       padding-bottom: 2%;
+      @include GradientText(#fbff00, #fdff6d);
       font-size: 35px;
     }
     &Para {
-      font-size: 30px;
       line-height: 1.2;
-      color: #6df5ff;
+      text-align: center;
+      color: #dddddd;
     }
     &LogoCont {
       @include row;
@@ -31,16 +38,21 @@
         width: 4%;
         font-size: 30px;
         color: #fff;
-        margin-left: 2%;
-        margin-right: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
         cursor: pointer;
       }
     }
     &Button {
+      text-align: center;
+      margin-top: 2%;
       padding: 10px;
-      width: 30%;
       font-size: 15px;
       border-radius: 25px;
+      min-width: 30%;
+      background-color: #ff00ff;
+      border: none;
+      color: #fff;
     }
   }
 }

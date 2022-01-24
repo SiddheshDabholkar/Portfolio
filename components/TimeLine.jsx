@@ -17,14 +17,14 @@ const data = [
     id: 2,
     name: "Internship",
     icon: Edu,
-    description: "React developer Kalpas Innovation",
+    description: "React developer intern at Kalpas Innovation",
     meta: "(july 21 to sep 21 )",
   },
   {
     id: 3,
     name: "College",
     icon: Hat,
-    description: "Goa College Of Engineering",
+    description: "Goa College Of Engineering,IT",
     meta: "(2019-2023)",
   },
 ];

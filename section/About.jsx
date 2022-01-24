@@ -4,7 +4,7 @@ import TimeLine from "../components/TimeLine";
 
 export default function About() {
   return (
-    <div className={styles.About}>
+    <div id="About" className={styles.About}>
       <div className={styles.AboutTop}>
         <h1 className={styles.AboutTopH}>About</h1>
       </div>
