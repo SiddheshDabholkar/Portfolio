@@ -2,6 +2,16 @@
   background: -webkit-linear-gradient($c1, $c2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &:hover {
+    background: -webkit-linear-gradient(rgb(255, 0, 255), pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
-
+@mixin SectionHeadText($c1, $c2) {
+  @include GradientText($c1, $c2);
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 9px;
+}

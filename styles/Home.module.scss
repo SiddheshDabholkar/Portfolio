@@ -1,0 +1,6 @@
+@import "common";
+
+.Home {
+  @include col;
+  @include center;
+}

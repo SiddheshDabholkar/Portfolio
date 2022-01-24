@@ -1,0 +1,45 @@
+@import "Typography";
+@import "common";
+@import "responsive";
+
+.About {
+  @include col;
+  @include center;
+  width: 100%;
+  &Top {
+    text-align: center;
+    width: 100%;
+    &H {
+      @include SectionHeadText(blue, skyblue);
+    }
+  }
+  &Bottom {
+    @include col;
+    @include center;
+    width: 90%;
+    @include mobileXL {
+      width: 95%;
+    }
+    &P {
+      color: #dddddd;
+      text-align: center;
+      width: 60%;
+      line-height: 1.3;
+      @include mobileXL {
+        width: 90%;
+      }
+    }
+    &H {
+      line-height: 1.3;
+    }
+    &Timeline {
+      @include col;
+      @include center;
+      margin: 2%;
+      width: 60%;
+      @include mobileXL {
+        width: 95%;
+      }
+    }
+  }
+}

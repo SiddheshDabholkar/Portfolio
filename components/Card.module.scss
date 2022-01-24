@@ -1,0 +1,34 @@
+@import "common";
+@import "responsive";
+
+.Card {
+  @include col;
+  padding: 10%;
+  cursor: pointer;
+  margin: 10%;
+  backdrop-filter: blur(16px);
+  background-color: #0091ff0f;
+  box-shadow: 18px 22px 59px 0px #00a5ff30;
+  -webkit-box-shadow: 18px 22px 59px 0px #00a5ff30;
+  -moz-box-shadow: 18px 22px 59px 0px #00a5ff30;
+  border-radius: 25px;
+  @include mobileXL {
+    border-radius: 15px;
+    padding: 6%;
+    padding: 6%;
+  }
+  &H {
+    font-size: 15px;
+    line-height: 1.2;
+    @include mobileXL {
+      font-size: 12px;
+    }
+  }
+  &P {
+    font-size: 12px;
+    line-height: 1.2;
+    @include mobileXL {
+      font-size: 10px;
+    }
+  }
+}
