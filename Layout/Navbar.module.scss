@@ -12,6 +12,7 @@
     @include row;
     @include center;
     width: 20%;
+    z-index: 100000 !important;
     height: 100%;
   }
   &Routes {
@@ -21,6 +22,7 @@
     @include end;
     height: 100%;
     width: 80%;
+    z-index: 100000 !important;
     @media (max-width: 375px) {
       height: 60px;
       font-size: 16px;

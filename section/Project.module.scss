@@ -1,0 +1,45 @@
+@import "common";
+@import "responsive";
+@import "Typography";
+
+.Project {
+  @include col;
+  @include center;
+  width: 100%;
+  &Cont {
+    margin-top: 10px;
+    @include col;
+    @include center;
+    width: 80%;
+    &Row {
+      @include row;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 10px;
+      align-items: stretch;
+      justify-content: space-around;
+      &Img {
+        width: 60%;
+        min-height: 100%;
+        padding: 10px;
+        z-index: 100;
+        &Style {
+          border-radius: 10px;
+        }
+      }
+      &Des {
+        @include col;
+        @include center;
+        min-height: 100%;
+        width: 40%;
+        padding: 10px;
+        &4 {
+          height: 100%;
+          z-index: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
