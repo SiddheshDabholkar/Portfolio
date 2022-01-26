@@ -54,12 +54,32 @@
       height: 100%;
       z-index: 1;
       width: 100%;
+      &Head {
+        @include SectionHeadText(blue, skyblue);
+        font-size: 20px;
+      }
+      &Cont {
+        padding: 2%;
+        font-size: 12px;
+      }
       &Tech {
+        @include row;
+        flex-wrap: wrap;
+        border-radius: 25px;
+        margin: 2%;
+        padding: 2px;
+        @include center;
         font-size: 25px;
+        background: #b4b4e24f;
       }
       &Link {
         @include row;
         @include center;
+        margin: 1%;
+        &Icon {
+          font-size: 25px;
+          padding: 5px;
+        }
       }
     }
   }

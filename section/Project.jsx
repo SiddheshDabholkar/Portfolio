@@ -17,25 +17,25 @@ export default function Project() {
     <div className={styles.ProjectContRowDes}>
       {/* <RotatingDivs /> */}
       <div className={styles.ProjectContRowDes4}>
-        <div>
-          <span>{d.name}</span>
-        </div>
-        <div className={styles.ProjectContRowDes4Cont}>
-          <p>{d.description}</p>
-        </div>
         <div className={styles.ProjectContRowDes4Tech}>
           {d.technologies.map((t) => {
             const Icon = t.icon;
             return <Icon className={styles.ProjectContRowDes4TechIcon} />;
           })}
         </div>
+        <div className={styles.ProjectContRowDes4Head}>
+          <span>{d.name}</span>
+        </div>
+        <div className={styles.ProjectContRowDes4Cont}>
+          <p>{d.description}</p>
+        </div>
         <div className={styles.ProjectContRowDes4Link}>
           <Link href={d.githubLink}>
-            <BsGithub />
+            <BsGithub className={styles.ProjectContRowDes4LinkIcon} />
           </Link>
           {d.liveLink && (
             <Link href={d.liveLink}>
-              <BiLinkExternal />
+              <BiLinkExternal className={styles.ProjectContRowDes4LinkIcon} />
             </Link>
           )}
         </div>
