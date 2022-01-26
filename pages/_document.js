@@ -6,33 +6,21 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
           <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
           <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
             rel="stylesheet"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
           <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin="true"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Changa&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
             rel="stylesheet"
           />
         </Head>

@@ -7,10 +7,10 @@ import Project from "../section/Project";
 export default function Home() {
   return (
     <div className={styles.Home}>
-      {/* <HomeSection /> */}
-      {/* <About /> */}
+      <HomeSection />
+      <About />
       <Project />
-      {/* <ContactSection /> */}
+      <ContactSection />
     </div>
   );
 }
