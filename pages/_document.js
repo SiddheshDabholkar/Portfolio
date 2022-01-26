@@ -8,18 +8,6 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
           <link
-            href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
-            rel="stylesheet"
-          />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
-          <link
             href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
             rel="stylesheet"
           />

@@ -11,7 +11,7 @@ const Routes = [
 export default function Navbar() {
   return (
     <div className={styles.Navbar}>
-      <div className={styles.NavbarLogo}>navbar</div>
+      <div className={styles.NavbarLogo}>Siddhesh</div>
       <div className={styles.NavbarRoutes}>
         {Routes.map((r) => (
           <SLink
