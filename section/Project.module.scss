@@ -1,0 +1,111 @@
+@import "common";
+@import "responsive";
+@import "Typography";
+
+@mixin RowStyle {
+  @include row;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 10px;
+  backdrop-filter: blur(16px);
+  background-color: #0091ff0f;
+  box-shadow: 18px 22px 59px 0px #00a5ff30;
+  -webkit-box-shadow: 18px 22px 59px 0px #00a5ff30;
+  -moz-box-shadow: 18px 22px 59px 0px #00a5ff30;
+  border-radius: 25px;
+  align-items: stretch;
+  cursor: pointer;
+  justify-content: space-around;
+  &:hover {
+    transition: 1000ms ease;
+    box-shadow: 18px 22px 59px 0px #e400ff30;
+    -webkit-box-shadow: 18px 22px 59px 0px #e400ff30;
+    -moz-box-shadow: 18px 22px 59px 0px #e400ff30;
+  }
+  @include tabletL {
+    @include col;
+  }
+  &Img {
+    width: 60%;
+    min-height: 100%;
+    z-index: 100;
+    border-radius: 25px;
+    &Style {
+      border-radius: 10px;
+    }
+    @include tabletL {
+      width: 100%;
+    }
+  }
+  &Des {
+    @include col;
+    @include center;
+    min-height: 100%;
+    width: 40%;
+    padding: 20px;
+    @include tabletL {
+      width: 100%;
+      padding: 0px;
+    }
+    &4 {
+      @include col;
+      @include center;
+      height: 100%;
+      z-index: 1;
+      width: 100%;
+      &Head {
+        @include SectionHeadText(blue, skyblue);
+        font-size: 20px;
+      }
+      &Cont {
+        padding: 2%;
+        font-size: 12px;
+      }
+      &Tech {
+        @include row;
+        flex-wrap: wrap;
+        border-radius: 25px;
+        margin: 2%;
+        padding: 2px;
+        @include center;
+        font-size: 25px;
+        background: #b4b4e24f;
+      }
+      &Link {
+        @include row;
+        @include center;
+        margin: 1%;
+        &Icon {
+          font-size: 25px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.Project {
+  @include col;
+  @include center;
+  width: 100%;
+  &H {
+    @include SectionHeadText(blue, skyblue);
+  }
+  &Cont {
+    margin-top: 10px;
+    @include col;
+    text-align: center;
+    @include center;
+    width: 80%;
+    &Row {
+      @include RowStyle;
+    }
+    &RevCol {
+      @include RowStyle;
+      @include tabletL {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}

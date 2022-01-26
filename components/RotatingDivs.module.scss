@@ -1,0 +1,40 @@
+@mixin cardStyle($width, $height, $color, $spin, $animation) {
+  position: absolute;
+  height: $height;
+  z-index: 1 !important;
+  width: $width;
+  backdrop-filter: blur(19px);
+  background-color: $color;
+  border-radius: 25px;
+  animation: $animation $spin infinite linear;
+  box-shadow: 25px 28px 115px 0px $color;
+  -webkit-box-shadow: 25px 28px 115px 0px $color;
+  -moz-box-shadow: 25px 28px 115px 0px $color;
+}
+
+.Des1 {
+  @include cardStyle(35%, 45%, #0008ff1e, 15000ms, spin);
+}
+.Des2 {
+  @include cardStyle(30%, 45%, #ff00662a, 9000ms, spin);
+}
+.Des3 {
+  @include cardStyle(35%, 45%, #ff00ea1e, 12000ms, aspin);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes aspin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
