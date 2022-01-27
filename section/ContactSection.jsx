@@ -9,9 +9,18 @@ import {
 } from "react-icons/ai";
 
 const Links = [
-  { id: 1, to: "", name: "Linkedin", icon: <AiOutlineLinkedin /> },
-  { id: 2, to: "", name: "Twitter", icon: <AiFillTwitterCircle /> },
-  { id: 3, to: "", name: "Github", icon: <AiOutlineGithub /> },
+  {
+    id: 1,
+    to: "https://www.linkedin.com/in/siddhesh-dabholkar-685036194",
+    name: "Linkedin",
+    icon: <AiOutlineLinkedin />,
+  },
+  {
+    id: 3,
+    to: "https://github.com/SiddheshDabholkar",
+    name: "Github",
+    icon: <AiOutlineGithub />,
+  },
 ];
 
 export default function ContactSection() {
