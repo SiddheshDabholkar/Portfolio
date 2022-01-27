@@ -11,7 +11,7 @@ const data = [
     name: "pre-College",
     icon: Hat,
     description: "Haramal Panchakroshi Shikshan Mandal",
-    meta: "(2007-2016)",
+    meta: "(2007-2019)",
   },
   {
     id: 2,
