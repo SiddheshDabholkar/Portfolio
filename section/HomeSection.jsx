@@ -92,11 +92,16 @@ export default function HomeSection() {
               loop={Infinity}
               wrapper="p"
             />
-            <button className={styles.HomeOneContButton} onClick={fire}>
-              <a download href="/resume.pdf">
-                Resume
-              </a>
-            </button>
+            <a
+              download
+              href="/resume.pdf"
+              className={styles.HomeOneContButton}
+              onClick={fire}
+            >
+              {/* <button> */}
+              Resume
+              {/* </button> */}
+            </a>
           </div>
         </div>
         <div className={styles.HomeTwo}>
